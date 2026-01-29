@@ -1,0 +1,21 @@
+{
+  "name": "icing-for-izaac-website",
+  "version": "1.0.0",
+  "description": "A beautiful, boutique-style website for Icing for Izaac bakery in Fort Wayne, Indiana",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "bakery",
+    "website",
+    "cheesecake",
+    "fort-wayne",
+    "printify"
+  ],
+  "author": "Icing for Izaac",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
