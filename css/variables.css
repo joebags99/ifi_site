@@ -1,35 +1,44 @@
 /* Design System - Icing for Izaac */
-/* Inspired by Cake Bake Shop - Bougie, elegant, feminine */
+/* Bold, girly, fun — but still professional */
 
 :root {
-  /* Primary Colors */
-  --color-primary-pink: #FFB6C1;
-  --color-accent-pink: #FF69B4;
-  --color-hot-pink: #FF1493;
-  --color-blush: #FFE4E1;
-  
+  /* Primary Colors - Punchy pinks */
+  --color-primary-pink: #F472B6;
+  --color-accent-pink: #EC4899;
+  --color-hot-pink: #DB2777;
+  --color-blush: #FDF2F8;
+  --color-light-pink: #FBCFE8;
+
+  /* Fun Pops */
+  --color-magenta: #A855F7;
+  --color-peach: #FDBA74;
+  --color-coral: #FB7185;
+
   /* Metallics */
-  --color-gold: #D4AF37;
-  --color-rose-gold: #B76E79;
-  --color-champagne: #F7E7CE;
-  
+  --color-gold: #F59E0B;
+  --color-rose-gold: #E879A0;
+  --color-champagne: #FEF3C7;
+
   /* Neutrals */
   --color-white: #FFFFFF;
-  --color-cream: #FFF8F0;
+  --color-cream: #FFFBF5;
   --color-ivory: #FFFFF0;
-  --color-text-dark: #4A4A4A;
-  --color-text-light: #8B8B8B;
-  
-  /* Gradients */
-  --gradient-pink: linear-gradient(135deg, var(--color-blush) 0%, var(--color-primary-pink) 100%);
-  --gradient-gold: linear-gradient(135deg, var(--color-champagne) 0%, var(--color-gold) 100%);
-  --gradient-hero: linear-gradient(135deg, rgba(255, 182, 193, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
-  
+  --color-text-dark: #1F1F1F;
+  --color-text-light: #6B7280;
+
+  /* Gradients - Bold and vibrant */
+  --gradient-pink: linear-gradient(135deg, #FBCFE8 0%, #F9A8D4 50%, #F472B6 100%);
+  --gradient-gold: linear-gradient(135deg, #FDE68A 0%, #F59E0B 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(244, 114, 182, 0.15) 0%, rgba(253, 242, 248, 0.95) 40%, rgba(254, 243, 199, 0.3) 100%);
+  --gradient-sunset: linear-gradient(135deg, #F472B6 0%, #FB923C 100%);
+  --gradient-candy: linear-gradient(135deg, #EC4899 0%, #A855F7 100%);
+  --gradient-footer: linear-gradient(135deg, #1F1F1F 0%, #3B1F2B 100%);
+
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   --font-accent: 'Dancing Script', cursive;
-  
+
   /* Font Sizes */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -40,7 +49,7 @@
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
   --text-5xl: 3rem;
-  
+
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -49,34 +58,29 @@
   --space-xl: 3rem;
   --space-2xl: 4rem;
   --space-3xl: 6rem;
-  
+
   /* Border Radius */
   --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
   --radius-full: 9999px;
-  
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(212, 175, 55, 0.1), 0 2px 4px -1px rgba(212, 175, 55, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(212, 175, 55, 0.15), 0 4px 6px -2px rgba(212, 175, 55, 0.08);
-  --shadow-xl: 0 20px 25px -5px rgba(212, 175, 55, 0.2), 0 10px 10px -5px rgba(212, 175, 55, 0.08);
-  --shadow-pink: 0 10px 30px rgba(255, 182, 193, 0.3);
-  
+
+  /* Shadows - Pink-tinted */
+  --shadow-sm: 0 1px 3px rgba(236, 72, 153, 0.08);
+  --shadow-md: 0 4px 12px rgba(236, 72, 153, 0.1);
+  --shadow-lg: 0 10px 25px rgba(236, 72, 153, 0.15);
+  --shadow-xl: 0 20px 40px rgba(236, 72, 153, 0.2);
+  --shadow-pink: 0 10px 40px rgba(244, 114, 182, 0.3);
+  --shadow-gold: 0 10px 30px rgba(245, 158, 11, 0.2);
+
   /* Transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-base: 300ms ease-in-out;
   --transition-slow: 500ms ease-in-out;
-  
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
   /* Layout */
   --container-max: 1200px;
   --container-padding: var(--space-lg);
-}
-
-/* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Keep light theme for bakery - override if needed */
-  }
 }

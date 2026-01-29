@@ -28,9 +28,9 @@ window.addEventListener('scroll', () => {
     
     // Add shadow on scroll
     if (currentScroll > 50) {
-        navbar.style.boxShadow = '0 4px 20px rgba(212, 175, 55, 0.15)';
+        navbar.style.boxShadow = '0 4px 20px rgba(236, 72, 153, 0.15)';
     } else {
-        navbar.style.boxShadow = '0 4px 6px -1px rgba(212, 175, 55, 0.1)';
+        navbar.style.boxShadow = '0 4px 12px rgba(236, 72, 153, 0.1)';
     }
     
     lastScroll = currentScroll;
@@ -124,7 +124,7 @@ function showNotification(message, type = 'success') {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: ${type === 'success' ? '#D4AF37' : '#FF1493'};
+        background: ${type === 'success' ? 'linear-gradient(135deg, #EC4899, #A855F7)' : '#DB2777'};
         color: white;
         padding: 1rem 1.5rem;
         border-radius: 50px;
