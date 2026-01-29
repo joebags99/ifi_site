@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order from Icing for Izaac - Premium handmade cheesecakes, cookies, cupcakes, cakes, breakfast, lunch, and custom orders in Fort Wayne, Indiana.">
+
+    <title>Ordering | Order Delicious Treats Today — Icing For Izaac</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Icing for Izaac Logo" class="logo" id="logo">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Ordering</a></li>
+                <li><a href="apparel.html">Apparel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Join Our Team</a></li>
+                <li class="cart-icon">
+                    <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count" id="cartCount">0</span>
+                </li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 50vh; margin-top: 80px;">
+        <div class="hero-content">
+            <span class="accent-text">Taste the Sweetness</span>
+            <h1>Menu & Ordering</h1>
+            <p>From our famous cheesecakes to fresh-baked cookies, every treat is handmade with love.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="#" class="btn btn-primary" id="doordashBtn">Order on DoorDash</a>
+                <a href="contact.html" class="btn btn-secondary">Custom Order Inquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Fee Notice -->
+    <section style="padding: var(--space-lg) 0;">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; background: var(--gradient-pink); padding: 1.5rem 2rem; border-radius: var(--radius-lg); text-align: center;">
+                <p style="font-size: var(--text-base); color: var(--color-text-dark);">
+                    <i class="fas fa-info-circle" style="margin-right: 0.5rem; color: var(--color-gold);"></i>
+                    <strong>Please Note:</strong> Effective January 1, 2026 — Custom and Pre-Ordered Items include a 6% service fee.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cheesecakes Section -->
+    <section id="cheesecakes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium Cheesecakes</h2>
+                <p>Our premium, made-from-scratch cheesecakes are consistently our most sought-after product. Available by the slice or as whole cakes for your special occasions.</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card fade-in">
+                    <img src="images/cheesecake.jpg" alt="Classic Cheesecake" class="card-image">
+                    <div class="card-content">
+                        <h4 class="card-title">Signature Flavors</h4>
+                        <p class="card-description">Our rotating selection of handmade cheesecake flavors, available daily by the slice in our cafe.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-text-light); line-height: 2;">
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Cookie Monster</li>
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Salted Caramel</li>
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Chocolate Covered Banana</li>
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Birthday Cake</li>
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Strawberry Dream</li>
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Raspberry Lemon</li>
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Frosted Animal Cookie</li>
+                            <li><i class="fas fa-check" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Peach Cobbler</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-size: var(--text-sm); color: var(--color-text-light); font-style: italic;">Flavors rotate — ask about today's selection!</p>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-content" style="display: flex; flex-direction: column; justify-content: center; min-height: 400px; text-align: center;">
+                        <div style="font-size: 4rem; color: var(--color-gold); margin-bottom: 1.5rem;">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h4 class="card-title">Whole Cheesecakes</h4>
+                        <p class="card-description">Perfect for parties, celebrations, and special occasions. Order a whole cheesecake in any of our signature flavors.</p>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: 1rem;">Inquire About Ordering</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookies Section -->
+    <section id="cookies" style="background: linear-gradient(135deg, rgba(255, 228, 225, 0.3) 0%, rgba(255, 255, 255, 0.5) 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cookies</h2>
+                <p>Handmade, in-house and served up daily for our walk-in customers and special orders.</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card fade-in">
+                    <img src="images/cookies.jpg" alt="Handmade Cookies" class="card-image">
+                    <div class="card-content">
+                        <h4 class="card-title">Cookie Flavors</h4>
+                        <p class="card-description">Freshly baked every day in our cafe kitchen. Available individually or by the dozen for events and parties.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-text-light); line-height: 2; columns: 2;">
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Chocolate Chip</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Snickerdoodle</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>German Chocolate</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Oreo</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Peanut Butter Chocolate</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Monster</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Almond Joy</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Birthday Cake</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Double Peanut Butter</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>Sugar</li>
+                            <li><i class="fas fa-cookie-bite" style="color: var(--color-gold); margin-right: 0.5rem;"></i>GF Chocolate Chip</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cupcakes Section -->
+    <section id="cupcakes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cupcakes</h2>
+                <p>Freshly baked cupcakes available daily in a variety of delicious flavors.</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card fade-in">
+                    <img src="images/cupcakes.jpg" alt="Cupcakes" class="card-image">
+                    <div class="card-content">
+                        <h4 class="card-title">Daily Cupcakes</h4>
+                        <p class="card-description">Our cupcakes are available daily in-store and can also be ordered in bulk for events, parties, and celebrations. Ask about our rotating seasonal flavors!</p>
+                        <a href="contact.html" class="btn btn-outline">Order for Your Event</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cafe Menu Section -->
+    <section id="cafe" style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 255, 255, 0.5) 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cafe Menu</h2>
+                <p>More than just desserts — we serve breakfast, lunch, coffee, and sweet drinks too!</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h4 class="card-title">Breakfast</h4>
+                        <p class="card-description">Start your morning right with our breakfast sandwiches, pastries, and cinnamon rolls. Served fresh every morning.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4 class="card-title">Lunch</h4>
+                        <p class="card-description">Sandwiches, salads, and fresh fruit — perfect for a midday pick-me-up alongside one of our sweet treats.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h4 class="card-title">Drinks</h4>
+                        <p class="card-description">A variety of sweet drinks, coffees, and specialty beverages to pair with your favorite treat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Orders & Catering -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Custom Orders & Catering</h2>
+                <p>From wedding cakes to corporate events — let us make your special occasion even sweeter.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); text-align: center;">
+                    <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h4 style="margin-bottom: 1rem;">Wedding Cakes</h4>
+                    <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 1.5rem;">Custom wedding cakes designed to make your special day unforgettable. Schedule a consultation to discuss your vision.</p>
+                    <a href="contact.html" class="btn btn-outline">Book a Consultation</a>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); text-align: center;">
+                    <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4 style="margin-bottom: 1rem;">Event Catering</h4>
+                    <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 1.5rem;">We cater events and functions throughout the Fort Wayne area. Let us bring the sweetness to your next gathering.</p>
+                    <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order CTA -->
+    <section style="background: var(--gradient-pink); text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 1rem;">Ready to Order?</h2>
+            <p style="font-size: var(--text-lg); margin-bottom: 2rem; color: var(--color-text-dark);">
+                Walk in to our cafe, order delivery through DoorDash, or contact us for custom orders.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#" class="btn btn-primary" onclick="window.open('https://www.doordash.com/store/icing-for-izaac-fort-wayne-25089246/', '_blank'); return false;">Order on DoorDash</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Icing for Izaac</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                        Your cheesecake and sweet-treat destination in Fort Wayne, Indiana. Made with love, care, and homemade goodness.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu & Ordering</a>
+                    <a href="apparel.html">Shop Apparel</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="careers.html">Join Our Team</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+                        243 Airport North Office Park<br>
+                        Fort Wayne, IN 46825
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>
+                        <a href="tel:+12604898889" style="color: rgba(255, 255, 255, 0.8);">(260) 489-8889</a>
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+                        <a href="mailto:icingforizaac@gmail.com" style="color: rgba(255, 255, 255, 0.8);">icingforizaac@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+                        Sign up to receive news and updates!
+                    </p>
+                    <form id="newsletterForm" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <input type="email" placeholder="Your email address" required
+                               style="padding: 0.75rem; border-radius: var(--radius-md); border: none; font-family: var(--font-body);">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Icing for Izaac. All rights reserved. | Made with 💗 in Fort Wayne</p>
+                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                    Effective January 1, 2026 - Custom and Pre-Ordered Items include a 6% service fee.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

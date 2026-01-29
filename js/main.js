@@ -166,7 +166,7 @@ if (doordashBtn) {
     doordashBtn.addEventListener('click', (e) => {
         e.preventDefault();
         // TODO: Replace with actual DoorDash store link
-        const doordashUrl = 'https://www.doordash.com/store/icing-for-izaac';
+        const doordashUrl = 'https://www.doordash.com/store/icing-for-izaac-fort-wayne-25089246/';
         window.open(doordashUrl, '_blank');
     });
 }

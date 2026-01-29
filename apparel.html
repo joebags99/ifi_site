@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Icing for Izaac apparel - Premium quality t-shirts, hoodies, and accessories designed with love.">
+    
+    <title>Shop Apparel | Icing for Izaac</title>
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Icing for Izaac Logo" class="logo" id="logo">
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Ordering</a></li>
+                <li><a href="apparel.html">Apparel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Join Our Team</a></li>
+                <li class="cart-icon">
+                    <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count" id="cartCount">0</span>
+                </li>
+            </ul>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 50vh; margin-top: 80px;">
+        <div class="hero-content">
+            <span class="accent-text">Wear Your Sweetness</span>
+            <h1>Shop Apparel</h1>
+            <p>Premium quality apparel designed with love and sweetness in mind. Every purchase supports our mission.</p>
+        </div>
+    </section>
+
+    <!-- Apparel Products Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Collection</h2>
+                <p>Browse our curated selection of apparel and accessories. Each piece is made-to-order with premium materials.</p>
+            </div>
+            
+            <!-- Printify Products will load here -->
+            <div id="printify-products" class="card-grid">
+                <!-- Products will be dynamically loaded via printify.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Shop Section -->
+    <section style="background: linear-gradient(135deg, rgba(255, 228, 225, 0.3) 0%, rgba(255, 255, 255, 0.5) 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Shop With Us?</h2>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="card-title">Made with Love</h4>
+                        <p class="card-description">Every product is carefully designed with our signature style and attention to detail.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="card-title">Premium Quality</h4>
+                        <p class="card-description">We use only the highest quality materials and printing techniques for lasting wear.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h4 class="card-title">Support Our Mission</h4>
+                        <p class="card-description">Every purchase helps us spread kindness and break the silence on pregnancy and infant loss.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping & Returns Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Shipping & Returns</h2>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto; background: white; padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow-md);">
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--color-accent-pink); margin-bottom: 1rem;">
+                        <i class="fas fa-shipping-fast" style="margin-right: 0.5rem;"></i>
+                        Shipping Information
+                    </h4>
+                    <p style="color: var(--color-text-light); line-height: 1.8;">
+                        All apparel items are made-to-order and typically ship within 7-10 business days. 
+                        You'll receive a tracking number once your order ships. Domestic shipping is available throughout the United States.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--color-accent-pink); margin-bottom: 1rem;">
+                        <i class="fas fa-undo" style="margin-right: 0.5rem;"></i>
+                        Returns & Exchanges
+                    </h4>
+                    <p style="color: var(--color-text-light); line-height: 1.8;">
+                        We want you to love your purchase! If you're not completely satisfied, we accept returns within 30 days of delivery. 
+                        Items must be unworn and in original condition. Please contact us to initiate a return or exchange.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--gradient-pink); text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 1rem;">Ready to Spread Sweetness?</h2>
+            <p style="font-size: var(--text-lg); margin-bottom: 2rem; color: var(--color-text-dark);">
+                Share the love and kindness with our apparel collection.
+            </p>
+            <a href="contact.html" class="btn btn-primary">Questions? Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Icing for Izaac</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                        Your cheesecake and sweet-treat destination in Fort Wayne, Indiana. Made with love, care, and homemade goodness.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu & Ordering</a>
+                    <a href="apparel.html">Shop Apparel</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="careers.html">Join Our Team</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+                        243 Airport North Office Park<br>
+                        Fort Wayne, IN 46825
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+                        <a href="mailto:icingforizaac@gmail.com" style="color: rgba(255, 255, 255, 0.8);">icingforizaac@gmail.com</a>
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+                        Sign up to receive news and updates!
+                    </p>
+                    <form id="newsletterForm" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <input type="email" placeholder="Your email address" required 
+                               style="padding: 0.75rem; border-radius: var(--radius-md); border: none; font-family: var(--font-body);">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Icing for Izaac. All rights reserved. | Made with 💗 in Fort Wayne</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/printify.js"></script>
+</body>
+</html>
