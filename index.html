@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Icing for Izaac - Your Cheesecake and Sweet-Treat Destination in Fort Wayne, Indiana. Premium handmade cheesecakes, cookies, and cupcakes.">
+    <meta name="keywords" content="bakery, cheesecake, cookies, cupcakes, Fort Wayne, Indiana, custom cakes">
+    
+    <title>Icing for Izaac | Taste the Sweetness Today!</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Icing for Izaac Logo" class="logo" id="logo">
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Ordering</a></li>
+                <li><a href="apparel.html">Apparel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Join Our Team</a></li>
+                <li class="cart-icon">
+                    <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count" id="cartCount">0</span>
+                </li>
+            </ul>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="accent-text">Welcome to</span>
+            <h1>Icing for Izaac</h1>
+            <p>Your Cheesecake and Sweet-Treat Destination</p>
+            <p>We're so glad you're here! Around here, life is a little sweeter—whether you're stopping in for our famous cheesecakes, a special celebration dessert, or just a treat to brighten your day.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="menu.html" class="btn btn-primary">Browse Our Selections</a>
+                <a href="#" class="btn btn-secondary" id="doordashBtn">Order on DoorDash</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Treats Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Featured Treats</h2>
+                <p>Every bite is made with care, love, and the kind of homemade goodness that brings people together.</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card fade-in">
+                    <img src="images/cheesecake.jpg" alt="Premium Cheesecakes" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Premium Cheesecakes</h3>
+                        <p class="card-description">Our premium, made-from-scratch cheesecakes are consistently our most sought-after product!</p>
+                        <a href="menu.html#cheesecakes" class="btn btn-outline">View Flavors</a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <img src="images/cookies.jpg" alt="Cookies" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Cookies</h3>
+                        <p class="card-description">Handmade, in-house and served up daily for our walk-in customers and special orders.</p>
+                        <a href="menu.html#cookies" class="btn btn-outline">View Selection</a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <img src="images/cupcakes.jpg" alt="Cupcakes" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Cupcakes</h3>
+                        <p class="card-description">Freshly baked cupcakes available daily in a variety of delicious flavors.</p>
+                        <a href="menu.html#cupcakes" class="btn btn-outline">See Flavors</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-xl">
+                <a href="menu.html" class="btn btn-primary">Shop All Treats</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section style="background: linear-gradient(135deg, rgba(255, 228, 225, 0.3) 0%, rgba(255, 255, 255, 0.5) 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Icing for Izaac Services</h2>
+                <p>At heart, we are a small bakery with a great big mission! We do our best to spread kindness everywhere we go.</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h4 class="card-title">Cheesecakes</h4>
+                        <p class="card-description">Our premium, made-from-scratch cheesecakes are consistently our most sought-after product! Contact us today to get your favorite slices.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                        <h4 class="card-title">Cookies & Cupcakes</h4>
+                        <p class="card-description">Handmade, in-house and served up daily for our walk-in customers, special orders and off-site events.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4 class="card-title">Special Events</h4>
+                        <p class="card-description">We are proud to be involved in a number of events across the area! Contact us today with your ideas!</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4 class="card-title">Catering</h4>
+                        <p class="card-description">We host catering services for a variety of events and functions throughout the Fort Wayne area!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-xl">
+                <a href="menu.html" class="btn btn-secondary">Go to Menu & Selections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h2 class="mb-lg">Get to Know Us</h2>
+                    <p style="font-size: var(--text-lg); line-height: 1.8; margin-bottom: 1.5rem;">
+                        My name is Grayce Holloway. I am the owner of Icing for Izaac. I am married to my high school sweetheart and the love of my life, Eric. We have been together over 15 years, and we have 5 beautiful children.
+                    </p>
+                    <p style="font-size: var(--text-lg); line-height: 1.8; margin-bottom: 1.5rem;">
+                        I have been baking for over 15 years, and I finally took a leap of faith to open this baking business in 2019 after losing one of my twin sons named Izaac during my pregnancy. I decided to be the help I couldn't find and use my passion to break the silence on pregnancy and infant loss while baking as a creative outlet to survive the grief and postpartum depression.
+                    </p>
+                    <p style="font-size: var(--text-lg); line-height: 1.8; margin-bottom: 2rem; font-weight: 600; color: var(--color-accent-pink);">
+                        It was the best decision I have ever made!
+                    </p>
+                    <a href="about.html" class="btn btn-primary">The Icing for Izaac Story</a>
+                </div>
+                <div>
+                    <img src="images/family-photo.jpg" alt="Grayce and Family" style="width: 100%; border-radius: var(--radius-xl); box-shadow: var(--shadow-pink);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 255, 255, 0.5) 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Come Visit Our Location!</h2>
+                <p><strong>243 Airport North Office Park, Fort Wayne, IN 46825</strong></p>
+                <p>Hours: Monday-Friday 10am-5pm, Saturday 10am-4pm, Closed on Sundays!</p>
+            </div>
+            
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="contact.html" class="btn btn-primary">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Icing for Izaac</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                        Your cheesecake and sweet-treat destination in Fort Wayne, Indiana. Made with love, care, and homemade goodness.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/icingforizaac" target="_blank" class="social-link">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu & Ordering</a>
+                    <a href="apparel.html">Shop Apparel</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="careers.html">Join Our Team</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+                        243 Airport North Office Park<br>
+                        Fort Wayne, IN 46825
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+                        <a href="mailto:icingforizaac@gmail.com" style="color: rgba(255, 255, 255, 0.8);">icingforizaac@gmail.com</a>
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-clock" style="margin-right: 0.5rem;"></i>
+                        Mon-Fri: 10am-5pm<br>
+                        Sat: 10am-4pm<br>
+                        Sun: Closed
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+                        Sign up to receive news and updates!
+                    </p>
+                    <form id="newsletterForm" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <input type="email" placeholder="Your email address" required 
+                               style="padding: 0.75rem; border-radius: var(--radius-md); border: none; font-family: var(--font-body);">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Icing for Izaac. All rights reserved. | Made with 💗 in Fort Wayne</p>
+                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                    Effective January 1, 2026 - Custom and Pre-Ordered Items include a 6% service fee.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

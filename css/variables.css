@@ -1,0 +1,82 @@
+/* Design System - Icing for Izaac */
+/* Inspired by Cake Bake Shop - Bougie, elegant, feminine */
+
+:root {
+  /* Primary Colors */
+  --color-primary-pink: #FFB6C1;
+  --color-accent-pink: #FF69B4;
+  --color-hot-pink: #FF1493;
+  --color-blush: #FFE4E1;
+  
+  /* Metallics */
+  --color-gold: #D4AF37;
+  --color-rose-gold: #B76E79;
+  --color-champagne: #F7E7CE;
+  
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-cream: #FFF8F0;
+  --color-ivory: #FFFFF0;
+  --color-text-dark: #4A4A4A;
+  --color-text-light: #8B8B8B;
+  
+  /* Gradients */
+  --gradient-pink: linear-gradient(135deg, var(--color-blush) 0%, var(--color-primary-pink) 100%);
+  --gradient-gold: linear-gradient(135deg, var(--color-champagne) 0%, var(--color-gold) 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(255, 182, 193, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-accent: 'Dancing Script', cursive;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(212, 175, 55, 0.1), 0 2px 4px -1px rgba(212, 175, 55, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(212, 175, 55, 0.15), 0 4px 6px -2px rgba(212, 175, 55, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(212, 175, 55, 0.2), 0 10px 10px -5px rgba(212, 175, 55, 0.08);
+  --shadow-pink: 0 10px 30px rgba(255, 182, 193, 0.3);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+  
+  /* Layout */
+  --container-max: 1200px;
+  --container-padding: var(--space-lg);
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Keep light theme for bakery - override if needed */
+  }
+}
