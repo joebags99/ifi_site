@@ -88,7 +88,7 @@ nav .container {
 .logo-text {
   font-family: var(--font-accent);
   font-size: var(--text-2xl);
-  color: var(--color-gold);
+  color: var(--color-hot-pink);
   font-weight: 700;
 }
 
@@ -228,7 +228,7 @@ nav .container {
 .hero-subtitle {
   font-size: var(--text-2xl) !important;
   font-weight: 600 !important;
-  color: var(--color-gold) !important;
+  color: var(--color-hot-pink) !important;
   margin-bottom: var(--space-md) !important;
 }
 
