@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Icing for Izaac - Your Cheesecake and Sweet-Treat Destination in Fort Wayne, Indiana. Premium handmade cheesecakes, cookies, and cupcakes.">
     <meta name="keywords" content="bakery, cheesecake, cookies, cupcakes, Fort Wayne, Indiana, custom cakes">
-    
+
     <title>Icing for Izaac | Taste the Sweetness Today!</title>
-    
-    <!-- Favicon -->
+
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/main.css">
-    
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Icing for Izaac Logo" class="logo" id="logo">
+            <a href="index.html" class="nav-logo">
+                <img src="images/heart+cake+logo.png" alt="Icing for Izaac Logo" class="logo" id="logo">
+                <span class="logo-text">Icing for Izaac</span>
             </a>
-            
+
             <ul class="nav-links" id="navLinks">
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Ordering</a></li>
@@ -37,7 +33,7 @@
                     <span class="cart-count" id="cartCount">0</span>
                 </li>
             </ul>
-            
+
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
@@ -46,153 +42,186 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section — Full-bleed image -->
+    <section class="hero hero-image" style="background-image: url('images/hero_image.png');">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="accent-text">Welcome to</span>
+            <span class="accent-text" style="font-size: clamp(1.5rem, 5vw, 3rem);">Welcome to</span>
             <h1>Icing for Izaac</h1>
-            <p>Your Cheesecake and Sweet-Treat Destination</p>
-            <p>We're so glad you're here! Around here, life is a little sweeter—whether you're stopping in for our famous cheesecakes, a special celebration dessert, or just a treat to brighten your day.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-                <a href="menu.html" class="btn btn-primary">Browse Our Selections</a>
-                <a href="#" class="btn btn-secondary" id="doordashBtn">Order on DoorDash</a>
+            <p class="hero-subtitle">Your Cheesecake & Sweet-Treat Destination</p>
+            <p class="hero-body">Life is a little sweeter here — whether you're stopping in for our famous cheesecakes, a celebration dessert, or just a treat to brighten your day.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary btn-lg">Browse Our Menu</a>
+                <a href="#" class="btn btn-glass" id="doordashBtn">
+                    <i class="fas fa-motorcycle" style="margin-right: 0.5rem;"></i>Order on DoorDash
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Featured Treats Section -->
-    <section>
+    <!-- Featured Treats — Bold masonry-style grid -->
+    <section class="section-treats">
         <div class="container">
             <div class="section-header">
+                <span class="accent-text" style="font-size: var(--text-2xl);">What We're Known For</span>
                 <h2>Our Featured Treats</h2>
                 <p>Every bite is made with care, love, and the kind of homemade goodness that brings people together.</p>
             </div>
-            
-            <div class="card-grid">
-                <div class="card fade-in">
-                    <img src="images/cheesecake.jpg" alt="Premium Cheesecakes" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Premium Cheesecakes</h3>
-                        <p class="card-description">Our premium, made-from-scratch cheesecakes are consistently our most sought-after product!</p>
-                        <a href="menu.html#cheesecakes" class="btn btn-outline">View Flavors</a>
+
+            <div class="treats-grid">
+                <a href="menu.html#cheesecakes" class="treat-card treat-card-lg">
+                    <img src="images/cheese_cake.png" alt="Premium Cheesecakes">
+                    <div class="treat-card-overlay">
+                        <h3>Premium Cheesecakes</h3>
+                        <p>Made-from-scratch & always our #1 seller</p>
+                        <span class="treat-link">View Flavors <i class="fas fa-arrow-right"></i></span>
                     </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <img src="images/cookies.jpg" alt="Cookies" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Cookies</h3>
-                        <p class="card-description">Handmade, in-house and served up daily for our walk-in customers and special orders.</p>
-                        <a href="menu.html#cookies" class="btn btn-outline">View Selection</a>
+                </a>
+
+                <a href="menu.html#cookies" class="treat-card">
+                    <img src="images/cookies.png" alt="Cookies">
+                    <div class="treat-card-overlay">
+                        <h3>Cookies</h3>
+                        <p>Baked fresh daily</p>
+                        <span class="treat-link">View Selection <i class="fas fa-arrow-right"></i></span>
                     </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <img src="images/cupcakes.jpg" alt="Cupcakes" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Cupcakes</h3>
-                        <p class="card-description">Freshly baked cupcakes available daily in a variety of delicious flavors.</p>
-                        <a href="menu.html#cupcakes" class="btn btn-outline">See Flavors</a>
+                </a>
+
+                <a href="menu.html#cupcakes" class="treat-card">
+                    <img src="images/cupcake.png" alt="Cupcakes">
+                    <div class="treat-card-overlay">
+                        <h3>Cupcakes</h3>
+                        <p>Colorful & delicious</p>
+                        <span class="treat-link">See Flavors <i class="fas fa-arrow-right"></i></span>
                     </div>
-                </div>
+                </a>
+
+                <a href="menu.html" class="treat-card">
+                    <img src="images/brookies.jpg" alt="Brookies & More">
+                    <div class="treat-card-overlay">
+                        <h3>Brookies & More</h3>
+                        <p>Always something new</p>
+                        <span class="treat-link">See All Treats <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
             </div>
-            
-            <div class="text-center mt-xl">
-                <a href="menu.html" class="btn btn-primary">Shop All Treats</a>
+        </div>
+    </section>
+
+    <!-- Big CTA Banner with second cheesecake image -->
+    <section class="cta-banner">
+        <div class="cta-banner-image">
+            <img src="images/cheese_cake2.jpg" alt="Cheesecake Slices">
+        </div>
+        <div class="cta-banner-content">
+            <span class="accent-text" style="font-size: var(--text-2xl);">Don't just take our word for it</span>
+            <h2>The Cheesecake Everyone's Talking About</h2>
+            <p>Cookie Monster. Salted Caramel. Strawberry Dream. Raspberry Lemon. Our rotating flavors keep people coming back every week — come find your new favorite.</p>
+            <div class="hero-buttons" style="justify-content: flex-start;">
+                <a href="menu.html#cheesecakes" class="btn btn-primary">See All Flavors</a>
+                <a href="#" class="btn btn-secondary" onclick="window.open('https://www.doordash.com/store/icing-for-izaac-fort-wayne-25089246/', '_blank'); return false;">Order Delivery</a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section style="background: linear-gradient(135deg, rgba(255, 228, 225, 0.3) 0%, rgba(255, 255, 255, 0.5) 100%);">
+    <section>
         <div class="container">
             <div class="section-header">
+                <span class="accent-text" style="font-size: var(--text-2xl);">What We Do</span>
                 <h2>Icing for Izaac Services</h2>
                 <p>At heart, we are a small bakery with a great big mission! We do our best to spread kindness everywhere we go.</p>
             </div>
-            
+
             <div class="card-grid">
                 <div class="card">
                     <div class="card-content">
-                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                            <i class="fas fa-birthday-cake"></i>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-birthday-cake"></i></div>
                         <h4 class="card-title">Cheesecakes</h4>
                         <p class="card-description">Our premium, made-from-scratch cheesecakes are consistently our most sought-after product! Contact us today to get your favorite slices.</p>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <div class="card-content">
-                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                            <i class="fas fa-cookie-bite"></i>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-cookie-bite"></i></div>
                         <h4 class="card-title">Cookies & Cupcakes</h4>
                         <p class="card-description">Handmade, in-house and served up daily for our walk-in customers, special orders and off-site events.</p>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <div class="card-content">
-                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
                         <h4 class="card-title">Special Events</h4>
                         <p class="card-description">We are proud to be involved in a number of events across the area! Contact us today with your ideas!</p>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <div class="card-content">
-                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                            <i class="fas fa-utensils"></i>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-utensils"></i></div>
                         <h4 class="card-title">Catering</h4>
                         <p class="card-description">We host catering services for a variety of events and functions throughout the Fort Wayne area!</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="text-center mt-xl">
-                <a href="menu.html" class="btn btn-secondary">Go to Menu & Selections</a>
-            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section>
+    <!-- About Section — side-by-side with image -->
+    <section style="background: var(--color-blush);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-                <div>
-                    <h2 class="mb-lg">Get to Know Us</h2>
-                    <p style="font-size: var(--text-lg); line-height: 1.8; margin-bottom: 1.5rem;">
-                        My name is Grayce Holloway. I am the owner of Icing for Izaac. I am married to my high school sweetheart and the love of my life, Eric. We have been together over 15 years, and we have 5 beautiful children.
-                    </p>
-                    <p style="font-size: var(--text-lg); line-height: 1.8; margin-bottom: 1.5rem;">
-                        I have been baking for over 15 years, and I finally took a leap of faith to open this baking business in 2019 after losing one of my twin sons named Izaac during my pregnancy. I decided to be the help I couldn't find and use my passion to break the silence on pregnancy and infant loss while baking as a creative outlet to survive the grief and postpartum depression.
-                    </p>
-                    <p style="font-size: var(--text-lg); line-height: 1.8; margin-bottom: 2rem; font-weight: 600; color: var(--color-accent-pink);">
+            <div class="split-section">
+                <div class="split-text">
+                    <span class="accent-text" style="font-size: var(--text-2xl);">Our Story</span>
+                    <h2>Get to Know Us</h2>
+                    <p>My name is Grayce Holloway. I am the owner of Icing for Izaac. I am married to my high school sweetheart and the love of my life, Eric. We have been together over 15 years, and we have 5 beautiful children.</p>
+                    <p>I took a leap of faith to open this baking business in 2019 after losing one of my twin sons named Izaac during my pregnancy. I decided to be the help I couldn't find and use my passion to break the silence on pregnancy and infant loss.</p>
+                    <p class="text-pink" style="font-weight: 700; font-size: var(--text-xl);">
                         It was the best decision I have ever made!
                     </p>
-                    <a href="about.html" class="btn btn-primary">The Icing for Izaac Story</a>
+                    <a href="about.html" class="btn btn-primary" style="margin-top: var(--space-md);">The Full Story</a>
                 </div>
-                <div>
-                    <img src="images/family-photo.jpg" alt="Grayce and Family" style="width: 100%; border-radius: var(--radius-xl); box-shadow: var(--shadow-pink);">
+                <div class="split-image">
+                    <img src="images/hero_image.png" alt="Icing for Izaac treats" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-pink);">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Location Section -->
-    <section style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 255, 255, 0.5) 100%);">
+    <section>
         <div class="container">
             <div class="section-header">
-                <h2>Come Visit Our Location!</h2>
-                <p><strong>243 Airport North Office Park, Fort Wayne, IN 46825</strong></p>
-                <p>Hours: Monday-Friday 10am-5pm, Saturday 10am-4pm, Closed on Sundays!</p>
+                <span class="accent-text" style="font-size: var(--text-2xl);">Come See Us</span>
+                <h2>Visit Our Location!</h2>
             </div>
-            
-            <div style="margin-top: 3rem; text-align: center;">
+
+            <div class="location-card">
+                <div class="location-info">
+                    <div class="location-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>243 Airport North Office Park</strong><br>
+                            Fort Wayne, IN 46825
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Mon-Fri</strong> 10am — 5pm<br>
+                            <strong>Saturday</strong> 10am — 4pm<br>
+                            <strong>Sunday</strong> Closed
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <a href="tel:+12604898889" style="color: var(--color-text-dark); text-decoration: none; font-weight: 600;">(260) 489-8889</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="contact.html" class="btn btn-primary">Get Directions</a>
             </div>
         </div>
@@ -203,7 +232,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Icing for Izaac</h3>
+                    <img src="images/heart+cake+logo.png" alt="Icing for Izaac" style="height: 60px; margin-bottom: 1rem;">
                     <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
                         Your cheesecake and sweet-treat destination in Fort Wayne, Indiana. Made with love, care, and homemade goodness.
                     </p>
@@ -219,7 +248,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Explore</h3>
                     <a href="about.html">About Us</a>
@@ -228,7 +257,7 @@
                     <a href="contact.html">Contact</a>
                     <a href="careers.html">Join Our Team</a>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p style="color: rgba(255, 255, 255, 0.8);">
@@ -251,22 +280,22 @@
                         Sun: Closed
                     </p>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Newsletter</h3>
                     <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
                         Sign up to receive news and updates!
                     </p>
                     <form id="newsletterForm" style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <input type="email" placeholder="Your email address" required 
+                        <input type="email" placeholder="Your email address" required
                                style="padding: 0.75rem; border-radius: var(--radius-md); border: none; font-family: var(--font-body);">
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
                     </form>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2026 Icing for Izaac. All rights reserved. | Made with 💗 in Fort Wayne</p>
+                <p>&copy; 2026 Icing for Izaac. All rights reserved. | Made with love in Fort Wayne</p>
                 <p style="margin-top: 0.5rem; font-size: 0.875rem;">
                     Effective January 1, 2026 - Custom and Pre-Ordered Items include a 6% service fee.
                 </p>
@@ -274,7 +303,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 </html>
