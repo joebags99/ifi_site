@@ -59,7 +59,7 @@ nav {
   box-shadow: var(--shadow-md);
   z-index: 1000;
   transition: all var(--transition-base);
-  border-bottom: 3px solid var(--color-accent-pink);
+  border-bottom: 3px solid var(--color-gold);
 }
 
 nav .container {
@@ -88,7 +88,7 @@ nav .container {
 .logo-text {
   font-family: var(--font-accent);
   font-size: var(--text-2xl);
-  color: var(--color-hot-pink);
+  color: var(--color-gold);
   font-weight: 700;
 }
 
@@ -228,7 +228,7 @@ nav .container {
 .hero-subtitle {
   font-size: var(--text-2xl) !important;
   font-weight: 600 !important;
-  color: var(--color-hot-pink) !important;
+  color: var(--color-gold) !important;
   margin-bottom: var(--space-md) !important;
 }
 
@@ -423,8 +423,8 @@ section {
 .treat-card:hover .treat-card-overlay {
   background: linear-gradient(
     0deg,
-    rgba(219, 39, 119, 0.8) 0%,
-    rgba(219, 39, 119, 0.2) 50%,
+    rgba(212, 160, 23, 0.85) 0%,
+    rgba(212, 160, 23, 0.2) 50%,
     transparent 100%
   );
 }
@@ -606,7 +606,7 @@ section {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  border: 2px solid var(--color-light-pink);
+  border: 2px solid var(--color-champagne);
 }
 
 .location-info {
@@ -626,7 +626,7 @@ section {
 
 .location-detail i {
   font-size: 1.25rem;
-  color: var(--color-accent-pink);
+  color: var(--color-gold);
   margin-top: 3px;
 }
 
@@ -664,7 +664,7 @@ footer::before {
 }
 
 .footer-section h3 {
-  color: var(--color-primary-pink);
+  color: var(--color-gold-light);
   margin-bottom: var(--space-md);
   font-size: var(--text-xl);
 }
@@ -678,7 +678,7 @@ footer::before {
 }
 
 .footer-section a:hover {
-  color: var(--color-primary-pink);
+  color: var(--color-gold-light);
   padding-left: 4px;
 }
 
@@ -751,7 +751,7 @@ footer::before {
     padding: var(--space-xl);
     box-shadow: var(--shadow-lg);
     transition: left var(--transition-base);
-    border-top: 3px solid var(--color-accent-pink);
+    border-top: 3px solid var(--color-gold);
   }
 
   .nav-links.active {
@@ -909,10 +909,10 @@ footer::before {
   top: 8px;
   width: 14px;
   height: 14px;
-  background: var(--color-accent-pink);
+  background: var(--color-gold);
   border-radius: 50%;
   border: 3px solid var(--color-cream);
-  box-shadow: 0 0 0 3px var(--color-accent-pink);
+  box-shadow: 0 0 0 3px var(--color-gold);
 }
 
 .timeline-content h4 {
@@ -957,7 +957,7 @@ footer::before {
   line-height: 1;
   margin-right: 0.5rem;
   margin-top: 0.1rem;
-  color: var(--color-hot-pink);
+  color: var(--color-gold);
   font-weight: 700;
 }
 

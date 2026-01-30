@@ -124,7 +124,7 @@ function showNotification(message, type = 'success') {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: ${type === 'success' ? 'linear-gradient(135deg, #EC4899, #A855F7)' : '#DB2777'};
+        background: ${type === 'success' ? 'linear-gradient(135deg, #EC4899, #D4A017)' : '#DB2777'};
         color: white;
         padding: 1rem 1.5rem;
         border-radius: 50px;
