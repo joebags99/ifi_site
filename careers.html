@@ -41,29 +41,34 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="hero" style="min-height: 50vh; margin-top: 80px;">
+    <!-- Hero — Team photo background -->
+    <section class="hero hero-image" style="background-image: url('images/join2.png'); min-height: 55vh;">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="accent-text">We're Growing!</span>
+            <span class="accent-text" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">We're Growing!</span>
             <h1>Join Our Team</h1>
             <p>Be part of a bakery with heart. We're looking for passionate people who love spreading sweetness.</p>
         </div>
     </section>
 
-    <!-- Why Work With Us -->
+    <!-- Team Photo + Why Work With Us -->
     <section>
         <div class="container">
-            <div class="section-header">
-                <h2>Why Work With Us?</h2>
-                <p>At Icing for Izaac, you're not just joining a bakery — you're joining a family with a mission.</p>
+            <div class="split-section">
+                <div class="split-image">
+                    <img src="images/Join1.png" alt="Team member at Icing for Izaac" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-pink);">
+                </div>
+                <div class="split-text">
+                    <span class="accent-text" style="font-size: var(--text-2xl);">Why Us?</span>
+                    <h2>Why Work With Us?</h2>
+                    <p>At Icing for Izaac, you're not just joining a bakery — you're joining a family with a mission.</p>
+                </div>
             </div>
 
-            <div class="card-grid">
+            <div class="card-grid" style="margin-top: var(--space-2xl);">
                 <div class="card fade-in">
                     <div class="card-content">
-                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                            <i class="fas fa-heart"></i>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-heart"></i></div>
                         <h4 class="card-title">Purpose-Driven Work</h4>
                         <p class="card-description">Every day at Icing for Izaac is an opportunity to spread kindness and make someone's day a little sweeter. Our mission goes beyond baking.</p>
                     </div>
@@ -71,9 +76,7 @@
 
                 <div class="card fade-in">
                     <div class="card-content">
-                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                            <i class="fas fa-users"></i>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
                         <h4 class="card-title">Family Atmosphere</h4>
                         <p class="card-description">We're a close-knit team that supports each other. When you work here, you're part of the Icing for Izaac family.</p>
                     </div>
@@ -81,9 +84,7 @@
 
                 <div class="card fade-in">
                     <div class="card-content">
-                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                            <i class="fas fa-seedling"></i>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-seedling"></i></div>
                         <h4 class="card-title">Room to Grow</h4>
                         <p class="card-description">As our bakery continues to grow, so do opportunities for our team members. We invest in the people who invest in us.</p>
                     </div>

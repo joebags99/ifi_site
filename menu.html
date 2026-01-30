@@ -41,15 +41,16 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="hero" style="min-height: 50vh; margin-top: 80px;">
+    <!-- Hero — Brookies background -->
+    <section class="hero hero-image" style="background-image: url('images/cheese_cake2.jpg'); min-height: 55vh;">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="accent-text">Taste the Sweetness</span>
+            <span class="accent-text" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">Taste the Sweetness</span>
             <h1>Menu & Ordering</h1>
             <p>From our famous cheesecakes to fresh-baked cookies, every treat is handmade with love.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-                <a href="#" class="btn btn-primary" id="doordashBtn">Order on DoorDash</a>
-                <a href="contact.html" class="btn btn-secondary">Custom Order Inquiry</a>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary btn-lg" id="doordashBtn"><i class="fas fa-motorcycle" style="margin-right: 0.5rem;"></i>Order on DoorDash</a>
+                <a href="contact.html" class="btn btn-glass">Custom Order Inquiry</a>
             </div>
         </div>
     </section>
@@ -212,23 +213,26 @@
                 <p>From wedding cakes to corporate events — let us make your special occasion even sweeter.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px; margin: 0 auto;">
-                <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); text-align: center;">
-                    <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                        <i class="fas fa-ring"></i>
-                    </div>
-                    <h4 style="margin-bottom: 1rem;">Wedding Cakes</h4>
-                    <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 1.5rem;">Custom wedding cakes designed to make your special day unforgettable. Schedule a consultation to discuss your vision.</p>
-                    <a href="contact.html" class="btn btn-outline">Book a Consultation</a>
+            <div class="split-section" style="max-width: 1000px; margin: 0 auto;">
+                <div class="split-image">
+                    <img src="images/Impressive_Cake.png" alt="Custom cake by Icing for Izaac" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-pink);">
                 </div>
+                <div>
+                    <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
+                        <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md);">
+                            <div class="card-icon"><i class="fas fa-ring"></i></div>
+                            <h4 style="margin-bottom: 0.75rem;">Wedding Cakes</h4>
+                            <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 1rem;">Custom wedding cakes designed to make your special day unforgettable.</p>
+                            <a href="contact.html" class="btn btn-outline">Book a Consultation</a>
+                        </div>
 
-                <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); text-align: center;">
-                    <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;">
-                        <i class="fas fa-calendar-alt"></i>
+                        <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-md);">
+                            <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <h4 style="margin-bottom: 0.75rem;">Event Catering</h4>
+                            <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 1rem;">We cater events and functions throughout the Fort Wayne area.</p>
+                            <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                        </div>
                     </div>
-                    <h4 style="margin-bottom: 1rem;">Event Catering</h4>
-                    <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 1.5rem;">We cater events and functions throughout the Fort Wayne area. Let us bring the sweetness to your next gathering.</p>
-                    <a href="contact.html" class="btn btn-outline">Get a Quote</a>
                 </div>
             </div>
         </div>
